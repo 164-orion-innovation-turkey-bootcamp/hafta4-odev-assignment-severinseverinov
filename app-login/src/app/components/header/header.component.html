@@ -1,0 +1,113 @@
+<div style="padding: auto; margin: auto;">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #FF6000">
+    <div class="container-fluid">
+      <!-- Ana başlı ile ürünler listelenir. -->
+      <a class="navbar-brand fs-2 me-5" (click)="onClickAll()" style="cursor: pointer;">AllYouNeed</a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item dropdown me-5">
+            <a class="nav-link dropdown-toggle fs-3"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <!-- Dropdown menü ile filtreleme işlemleri için olan metodlar -->
+            <ul class="dropdown-menu fs-4" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" (click)="search('')">All</a></li>
+              <li><a class="dropdown-item" (click)="search('clothes')">Clothes</a></li>
+              <li><a class="dropdown-item" (click)="search('jewelery')">Jewellery</a></li>
+              <li><a class="dropdown-item" (click)="search('electronics')">Electronics</a></li>
+            </ul>
+          </li>
+          <form class="d-flex fs-3">
+            <!-- search barı tuş basılıp parmak çekilince ilgili metod çağrılır. -->
+            <input style="width: 600px;" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="searchTerm" (keyup)="searchProduct($event)">
+
+          </form>
+
+        </ul>
+        <ul class="navbar-nav">
+          <!-- Sepetin görüntülenmesi -->
+          <li class="nav-item fs-3 me-5"><a class="nav-link" (click)="onClickBasket()" style="cursor: pointer;">Basket</a></li>
+          <!-- Kullanıcı çıkış işlemi ve logine yönlendirme -->
+          <li class="nav-item fs-3"><a class="nav-link" (click)="exit()" style="cursor: pointer;">Exit</a>
+
+        </li></ul>
+
+      </div>
+    </div>
+  </nav>
+
+</div>
+
+<div [hidden]="!isProduct" class="container">
+  <div class="row">
+      <ng-container *ngFor="let item of searchCategory | search:searchKey:'title'">
+          <div style="cursor: pointer;" class="card col-md-3 me-5 mt-4 pb-2 pt-2">
+              <img  (click)="titleClick(item)" class="mb-3" style="height: 300px;" src="{{item.image}}" alt="">
+              <h5 (click)="titleClick(item)" style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
+              <p (click)="titleClick(item)" style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
+              <p (click)="titleClick(item)"><strong>Price:</strong> ${{item.price}}</p>
+              <button class="btn btn-primary" (click)="addToBasket(item)" >Add to basket</button>
+          </div>
+      </ng-container>
+
+  </div>
+</div>
+
+<div [hidden]="isProduct" class="container">
+  <ng-container *ngIf="products.length !=0">
+    <div class="container">
+      <div class="card-table">
+          <div class="cart-product">
+              <table class="table table-responsive">
+                  <thead>
+                      <tr>
+                          <th>Sr.No</th>
+                          <th>Product Name</th>
+                          <th>Product Image</th>
+                          <th>Description</th>
+                          <th>Price</th>
+                          <th>Quantity</th>
+                          <th>Total</th>
+                          <th>Action</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr *ngFor="let item of products; let i = index">
+                          <td>{{i+1}}</td>
+                          <td>{{item.title}}</td>
+                          <td><img style="width: 120px;" src="{{item.image}}" alt=""></td>
+                          <td style="width: 240;">{{item.description}}</td>
+                          <th style="width: 120;">{{item.price}}</th>
+                          <td style="width: 120;">{{item.quantity}}</td>
+                          <td style="width: 120;">{{item.total}}</td>
+                          <td>
+                              <button (click)="removeItem(item)" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td colspan="4"></td>
+                          <td><button (click)="emptyBasket()" class="btn btn-danger">Empty</button></td>
+                          <td><button (click)="onClickAll()" class="btn btn-primary">Shop</button></td>
+                          <td><button (click)="buyBasket()" class="btn btn-success">Buy</button></td>
+                          <td><strong>Total Count: ${{countTotal}}</strong></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="products.length == 0">
+  <div class="container mt-5">
+          <h4>Your basket is empty!</h4>
+          <h6>Add item to it now</h6>
+          <button (click)="onClickAll()"  class="btn btn-primary">Shop Now</button>
+  </div>
+</ng-container>
+
+</div>
+
+

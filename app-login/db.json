@@ -1,0 +1,268 @@
+{
+  "log": [
+    {
+      "id": 1,
+      "login": true
+    }
+  ],
+  "signupUsers": [
+    {
+      "username": "asda",
+      "firstname": "asdasd",
+      "lastname": "asdasdasd",
+      "phone": "123123123123123",
+      "genre": "male",
+      "email": "elif_sbt@hotmail.com",
+      "password": "qweqweqwe",
+      "id": 1
+    },
+    {
+      "username": "dfgsd",
+      "firstname": "dfg",
+      "lastname": null,
+      "phone": null,
+      "genre": null,
+      "email": null,
+      "password": null,
+      "id": 2
+    },
+    {
+      "username": "severin",
+      "firstname": "sevgin",
+      "lastname": "serbest",
+      "phone": 5220220202,
+      "genre": "male",
+      "email": "sevgin.ss@gmail.com",
+      "password": "admin",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "productId": 118574,
+      "title": "Fjallraven",
+      "price": 109.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "men's clothing",
+      "image": "https://productimages.hepsiburada.net/l/46/600-800/10860345327666.jpg",
+      "rating": {
+        "rate": 4,
+        "count": 120
+      }
+    },
+    {
+      "id": 2,
+      "productId": 218574,
+      "title": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+      "price": 64,
+      "description": "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
+      "category": "electronics",
+      "image": "https://productimages.hepsiburada.net/s/19/500/9845408596018.jpg",
+      "rating": {
+        "rate": 3,
+        "count": 203
+      }
+    },
+    {
+      "id": 3,
+      "productId": 318574,
+      "title": "White Gold Plated Princess",
+      "price": 9.99,
+      "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+      "category": "jewelery",
+      "image": "https://productimages.hepsiburada.net/s/113/500/110000060669518.jpg",
+      "rating": {
+        "rate": 2,
+        "count": 400
+      }
+    },
+    {
+      "id": 4,
+      "productId": 418574,
+      "title": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+      "price": 29.95,
+      "description": "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
+      "category": "women's clothing",
+      "image": "https://productimages.hepsiburada.net/l/22/1000/9972546338866.jpg",
+      "rating": {
+        "rate": 1,
+        "count": 340
+      }
+    },{
+      "id": 5,
+      "productId": 518574,
+      "title": "Fjallraven",
+      "price": 109.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "men's clothing",
+      "image": "https://productimages.hepsiburada.net/l/46/600-800/10860345327666.jpg",
+      "rating": {
+        "rate": 4,
+        "count": 120
+      }
+    },
+    {
+      "id": 6,
+      "productId": 618574,
+      "title": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+      "price": 64,
+      "description": "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
+      "category": "electronics",
+      "image": "https://productimages.hepsiburada.net/s/19/500/9845408596018.jpg",
+      "rating": {
+        "rate": 3,
+        "count": 203
+      }
+    },
+    {
+      "id": 7,
+      "productId": 718574,
+      "title": "White Gold Plated Princess",
+      "price": 9.99,
+      "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+      "category": "jewelery",
+      "image": "https://productimages.hepsiburada.net/s/113/500/110000060669518.jpg",
+      "rating": {
+        "rate": 2,
+        "count": 400
+      }
+    },
+    {
+      "id": 8,
+      "productId": 818574,
+      "title": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+      "price": 29.95,
+      "description": "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
+      "category": "women's clothing",
+      "image": "https://productimages.hepsiburada.net/l/22/1000/9972546338866.jpg",
+      "rating": {
+        "rate": 1,
+        "count": 340
+      }
+    }
+  ],
+  "soldProducts": [
+    {
+      "id": 1,
+      "productId": 118574,
+      "title": "Fjallraven",
+      "price": 109.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "men's clothing",
+      "image": "https://productimages.hepsiburada.net/l/46/600-800/10860345327666.jpg",
+      "rating": {
+        "rate": 4,
+        "count": 120
+      }
+    },
+    [
+      {
+        "id": 3,
+        "productId": 318574,
+        "title": "White Gold Plated Princess",
+        "price": 9.99,
+        "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+        "category": "jewelery",
+        "image": "https://productimages.hepsiburada.net/s/113/500/110000060669518.jpg",
+        "rating": {
+          "rate": 2,
+          "count": 400
+        },
+        "quantity": 1,
+        "total": 9.99
+      }
+    ],
+    [
+      {
+        "id": 3,
+        "productId": 318574,
+        "title": "White Gold Plated Princess",
+        "price": 9.99,
+        "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+        "category": "jewelery",
+        "image": "https://productimages.hepsiburada.net/s/113/500/110000060669518.jpg",
+        "rating": {
+          "rate": 2,
+          "count": 400
+        },
+        "quantity": 1,
+        "total": 9.99
+      }
+    ],
+    [
+      {
+        "id": 3,
+        "productId": 318574,
+        "title": "White Gold Plated Princess",
+        "price": 9.99,
+        "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+        "category": "jewelery",
+        "image": "https://productimages.hepsiburada.net/s/113/500/110000060669518.jpg",
+        "rating": {
+          "rate": 2,
+          "count": 400
+        },
+        "quantity": 1,
+        "total": 9.99
+      }
+    ]
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "porductId": 318574,
+      "postTitle": "Good",
+      "post": "Good product",
+      "rate": 1
+    },
+    {
+      "id": 2,
+      "porductId": 118574,
+      "postTitle": "Very good",
+      "post": "Very Good product",
+      "rate": 2
+    },
+    {
+      "id": 3,
+      "porductId": 418574,
+      "postTitle": "Excellent good",
+      "post": "Excellent Good product",
+      "rate": 3
+    },
+    {
+      "id": 4,
+      "porductId": 218574,
+      "postTitle": "Beutiful good",
+      "post": "Beutiful Good product",
+      "rate": 4
+    },{
+      "id": 5,
+      "porductId": 318574,
+      "postTitle": "Good",
+      "post": "Good product",
+      "rate": 1
+    },
+    {
+      "id": 6,
+      "porductId": 118574,
+      "postTitle": "Very good",
+      "post": "Very Good product",
+      "rate": 2
+    },
+    {
+      "id": 7,
+      "porductId": 418574,
+      "postTitle": "Excellent good",
+      "post": "Excellent Good product",
+      "rate": 3
+    },
+    {
+      "id": 8,
+      "porductId": 218574,
+      "postTitle": "Beutiful good",
+      "post": "Beutiful Good product",
+      "rate": 4
+    }
+  ]
+}
